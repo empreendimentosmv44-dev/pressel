@@ -546,6 +546,7 @@
             <span class="privacy-link" onclick="openPrivacyModal()">Políticas de privacidad</span>
             <span class="privacy-link" onclick="openCookiesModal()">Política de Cookies</span>
             <span class="privacy-link" onclick="openCondicionesModal()">Condiciones generales</span>
+            <span class="privacy-link" onclick="openAccesibilidadModal()">Declaración de Accesibilidad</span>
         </div>
     </footer>
 
@@ -818,6 +819,24 @@
         </div>
     </div>
 
+    <div class="modal" id="accesibilidadModal" onclick="closeAccesibilidadModal(event)">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeAccesibilidadModal()">✕</button>
+            <h2 class="modal-title">Declaración de Accesibilidad Del Sitio Web</h2>
+            <div class="modal-body">
+                <h3>DECLARACIÓN DE ACCESIBILIDAD DEL SITIO WEB PRIMOR.EU</h3>
+                
+                <p>Desde PRIMOR creemos firmemente que todas las personas deben poder navegar por nuestro sitio web de manera cómoda, sencilla y sin barreras. Nuestro objetivo es garantizar que el sitio web sea accesible para el mayor numero de usuarios posible, independientemente de sus capacidades o la tecnología utilizada.</p>
+
+                <p>Por ello nos esforzamos en cumplir con los estándares internacionales de accesibilidad digital, siguiendo las recomendaciones reconocidas en materia de buenas practicas para un diseño inclusivo. Para lograrlo, contamos con expertos en accesibilidad que nos ayudan a evaluar y mejorar continuamente la experiencia del usuario en nuestra web.</p>
+
+                <p>Sabemos que aun hay margen de mejora, por lo que en las próximas semanas se realizaran nuevos desarrollos que mejoren aun más la accesibilidad de nuestro sitio web. No obstante, si encuentras obstáculos al navegar por nuestra página o necesitas algún tipo de asistencia, no dudes en comunicarte con nuestro equipo de Atención al Cliente remitiendo un email a <strong>help@primor.eu</strong>.</p>
+
+                <p><strong>¡Será un placer ayudarte!</strong></p>
+            </div>
+        </div>
+    </div>
+
     <script>
         function prosseguir() {
             window.location.href = 'https://primorliquidacionbf.shop/index.html';
@@ -873,6 +892,20 @@
         function closeCondicionesModal(event) {
             if (!event || event.target.id === 'condicionesModal' || event.target.classList.contains('modal-close')) {
                 const modal = document.getElementById('condicionesModal');
+                modal.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        function openAccesibilidadModal() {
+            const modal = document.getElementById('accesibilidadModal');
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeAccesibilidadModal(event) {
+            if (!event || event.target.id === 'accesibilidadModal' || event.target.classList.contains('modal-close')) {
+                const modal = document.getElementById('accesibilidadModal');
                 modal.classList.remove('active');
                 document.body.style.overflow = 'auto';
             }
