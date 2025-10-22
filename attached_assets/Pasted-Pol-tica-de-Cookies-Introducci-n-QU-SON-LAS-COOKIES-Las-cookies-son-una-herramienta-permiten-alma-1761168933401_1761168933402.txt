@@ -1,0 +1,52 @@
+Política de Cookies
+Introducción
+¿QUÉ SON LAS COOKIES?
+Las cookies son una herramienta permiten almacenar y recuperar información en tu dispositivo cuando navegas por las webs. En general tienen distintas finalidades, puede ser utilizadas para reconocerte como usuario, personalizar la forma en que se muestra el contenido, obtener información sobre los usuarios. Para saber más sobre los usos y qué cookies concretas utilizamos, continúa leyendo esta Política.
+
+¿QUÉ TIPOS DE COOKIES UTILIZAMOS?
+Dependiendo de la clasificación podremos identificar las siguientes tipologías de cookies:
+
+Según la entidad que gestione pueden ser:
+
+Cookies propias: son aquellas que se envían al dispositivo del usuario desde nuestros equipos o dominios y desde el que prestamos el servicio solicitado.
+Cookies de terceros: son aquellas que se envían al dispositivo del usuario desde un equipo o dominio que no es gestionado por PRIMOR, sino por terceros con los colaboramos, como, por ejemplo: Google, Criteo, Bing Ads, u otros terceros. 
+Según el plazo en que permanecen activas puede ser:
+
+Cookies de sesión: son cookies diseñadas para recabar y almacenar datos mientras el usuario accede a una página web. Se suelen emplear para almacenar información que solo interesa conservar para la prestación del servicio solicitado por el usuario en una sola ocasión y desaparecen al terminar la sesión.
+Cookies persistentes: son aquellas en las que los datos siguen almacenados en el terminal y a los que se puede acceder y tratar durante el periodo definido por el responsable de la cookie, y que puede ir de unos minutos a varios años.
+Según su finalidad pueden ser:
+
+Cookies técnicas o esenciales: son aquéllas que permiten al usuario la navegación a través de una página web, plataforma o aplicación y la utilización de las diferentes opciones o servicios que en ella existan como, por ejemplo, controlar el tráfico y la comunicación de datos, identificar la sesión, acceder a partes de acceso restringido, recordar los elementos que integran un pedido, realizar el proceso de compra de un pedido, realizar la solicitud de inscripción o participación en un evento, utilizar elementos de seguridad durante la navegación, almacenar contenidos para la difusión de videos o sonido o compartir contenidos a través de redes sociales.
+Cookies de preferencias o personalización: son aquéllas que permiten al usuario acceder al servicio con algunas características de carácter general predefinidas en función de una serie de criterios en el terminal del usuario como, por ejemplo, el idioma, el número de resultados a mostrar cuando el usuario realiza una búsqueda, el aspecto o contenido del servicio en función del tipo de navegador a través del cual accede al servicio o de la región desde donde accede al servicio, etc.
+Cookies de análisis o medición: son aquellas que permiten al responsable de estas el seguimiento y análisis del comportamiento de los usuarios de los sitios web a los que están vinculadas, incluida la cuantificación de los impactos de los anuncios. La información recogida mediante este tipo de cookies se utiliza en la medición de la actividad de los sitios web, aplicación o plataforma, con el fin de introducir mejoras en función del análisis de los datos de uso que hacen los usuarios del servicio. Respecto al tratamiento de datos recabados a través de las cookies de análisis, el grupo de trabajo del artículo 29 ha manifestado que, a pesar de que no están exentas del deber de obtener un consentimiento informado para su uso, es poco probable que representen un riesgo para la privacidad de los usuarios siempre que se trate de cookies de primera parte, que traten datos agregados con una finalidad estrictamente estadística, que se facilite información sobre sus uso y se incluya la posibilidad de que los usuarios manifiesten su negativa sobre su utilización.
+Cookies de publicidad comportamental: son aquellas que almacenan información del comportamiento de los usuarios obtenida a través de la observación continuada de sus hábitos de navegación, lo que permite desarrollar un perfil específico para mostrar publicidad en función del mismo.
+¿QUÉ HAY DE LAS TRANSFERENCIAS INTERNACIONALES?
+Utilizamos los servicios de Google Analytics, una herramienta de análisis web gestionada por Google, prestador de servicios situado en Estados Unidos, país que no goza de un nivel de privacidad equivalente al europeo. Por ello, en este caso las transferencias internacionales a Google se hallan amparadas mediante las correspondientes Cláusulas Contractuales Tipo aprobadas por la Comisión Europea. 
+
+Si no estas de acuerdo con el uso de las cookies de Google Analytics, puedes personalizar tus cookies en el panel de consentimiento rechazando el uso de esta categoría especifica Análisis, aunque aceptes el resto. Se integra con otros servicios de Google, como Ads y Search Console. Para poder personalizar la experiencia de usuario al máximo, Google Analytics hace que sea posible monitorear el perfil de quienes acceden al sitio web, las páginas más visitadas, dispositivos, ciudades y otros datos. 
+
+¿Qué es el User Data Collection Acknowledgement?
+
+Es reconocer el acuerdo de recopilación de datos. Significa que el usuario final ha aceptado la recopilación y el procesado de sus datos con objeto de análisis y/o publicitarios.
+
+¿Qué es Google Signals y para qué sirve?
+
+Google signals proporciona datos de sesión de sitios y de aplicaciones, que Google asocia con usuarios que han iniciado sesión en sus cuentas de Google y que han activado la personalización de anuncios.
+
+Para más información sobre el tratamiento de datos que realiza Google puedes visitar sus políticas de privacidad.
+
+¿CÓMO CONFIGURAR LAS PREFERENCIAS DE PRIVACIDAD DE LAS COOKIES?
+Puedes aceptar todas las cookies, aceptar solo las seleccionadas expresamente, o rechazarlas todas (excepto las técnicas) en el en el panel de configuración del consentimiento de cookies (pulsando aquí). También puedes permitir, bloquear o borrar las cookies del navegador que utilices. En los siguientes enlaces tienes información sobre cómo configurar las cookies en los navegadores comunes:
+
+Google Chrome
+Mozilla Firefox
+Internet Explorer
+Safari (pc)
+Safari
+Chrome para Android
+También puedes revocar tu consentimiento para el uso de cookies en tu navegador mediante la instalación de un sistema de rechazo -o “opt-out”. En este caso, Google facilita un complemento de inhabilitación para navegadores de Analytics (para más información aquí).
+
+Asimismo, se informa que algunas características de los contenidos de nuestras Plataformas solo están disponibles si se permite la instalación de Cookies en su navegador. Si decide no aceptar o bloquear determinadas, puede que esto afecte al correcto funcionamiento normal de la página web o que impida el acceso a algunas funcionalidades de la misma o de otras páginas web de terceros.
+
+¿QUÉ COOKIES UTILIZAMOS?
+Puedes listar todas las cookies en la sección: Configura tus cookies aquí
