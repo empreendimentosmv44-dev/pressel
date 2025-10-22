@@ -295,6 +295,148 @@
                 font-size: 12px;
             }
         }
+
+        .privacy-link {
+            display: inline-block;
+            color: #28a745;
+            text-decoration: underline;
+            font-size: 13px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: color 0.3s ease;
+        }
+
+        .privacy-link:hover {
+            color: #1e7e34;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 10000;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .modal.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .modal-content {
+            background: white;
+            border-radius: 15px;
+            max-width: 800px;
+            width: 100%;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+            padding: 40px 30px 30px;
+            box-shadow: 0 10px 50px rgba(0, 0, 0, 0.3);
+            animation: slideUp 0.3s ease;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: #f8f9fa;
+            border: none;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 20px;
+            color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .modal-close:hover {
+            background: #28a745;
+            color: white;
+            transform: rotate(90deg);
+        }
+
+        .modal-title {
+            color: #28a745;
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .modal-body {
+            color: #333;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+        .modal-body h3 {
+            color: #28a745;
+            font-size: 18px;
+            font-weight: 700;
+            margin-top: 25px;
+            margin-bottom: 12px;
+        }
+
+        .modal-body h4 {
+            color: #333;
+            font-size: 15px;
+            font-weight: 600;
+            margin-top: 15px;
+            margin-bottom: 8px;
+        }
+
+        .modal-body p {
+            margin-bottom: 12px;
+        }
+
+        .modal-body ul {
+            margin-left: 20px;
+            margin-bottom: 12px;
+        }
+
+        @media (max-width: 480px) {
+            .modal-content {
+                padding: 35px 20px 20px;
+            }
+
+            .modal-title {
+                font-size: 20px;
+            }
+
+            .modal-body {
+                font-size: 13px;
+            }
+
+            .modal-body h3 {
+                font-size: 16px;
+            }
+
+            .modal-body h4 {
+                font-size: 14px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -399,7 +541,93 @@
         <p class="footer-text">
             ROSA CREMA, S.L., con CIF B92683259 y Domicilio social: Cl Albinoni Pg. Trévenez 6-8 29590 - (Campanillas) – Málaga.
         </p>
+        
+        <span class="privacy-link" onclick="openPrivacyModal()">Políticas de privacidad</span>
     </footer>
+
+    <div class="modal" id="privacyModal" onclick="closePrivacyModal(event)">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closePrivacyModal()">✕</button>
+            <h2 class="modal-title">Políticas de Privacidad</h2>
+            <div class="modal-body">
+                <h3>¿Quiénes son los responsables?</h3>
+                <p>Rosa Crema, S.L., Primor Can, S.L., Persian Melon, S.L. y Sentimental Journey Unipessoal Lda tratan tus datos personales de manera conjunta, es decir somos corresponsables del tratamiento.</p>
+
+                <h3>¿Con qué finalidad tratamos tus datos personales?</h3>
+                <p>En síntesis, utilizaremos tus datos para responder a las cuestiones que nos hagas llegar, para la gestión de tu registro como usuario, la ejecución del contrato de compra, el envío de comunicaciones comerciales, la realización de encuestas de calidad, la gestión de la selección del personal laboral, así como otras cuestiones relacionadas con la seguridad, análisis y medición de la interacción de los usuarios o prevención del fraude.</p>
+
+                <h3>¿Por qué estamos legitimados para utilizar tus datos?</h3>
+                <p>Utilizaremos tus datos personales basándonos en la necesidad de tratarlos para la ejecución de un contrato o para la aplicación de medidas precontractuales, en otros casos trataremos tus datos porque nos lo imponga una obligación legal, porque consideremos que tengamos un interés legítimo en realizar ese tratamiento, o porque expresamente nos hayas prestado tú consentimiento.</p>
+
+                <h3>¿A quién comunicamos tus datos personales?</h3>
+                <p>Podremos comunicar tus datos con prestadores de servicios externos que actúan por nuestra cuenta y, por otro lado, cuando sea necesario, con el resto de corresponsables que operan bajo la marca PRIMOR.</p>
+
+                <h3>¿Qué derechos tienes?</h3>
+                <p>En general, tienes derecho de acceso, rectificación, supresión, oposición, limitación del tratamiento, portabilidad y derecho a retirar el consentimiento prestado. No obstante, ten en cuenta que la existencia de estos derechos dependerá del tipo de tratamiento en cuestión y su base de legitimación, por ello te aconsejamos que continúes leyendo nuestra Política de Privacidad.</p>
+
+                <h3>Responsabilidad, finalidad y tratamiento</h3>
+                <p>La información sobre el uso de datos de carácter personal por parte de las entidades que conforman PRIMOR se compone de esta Política de Privacidad y de la Política de Cookies. Estas políticas tienen efecto tanto en la web www.primor.eu como en la Aplicación de Perfumerías Primor (ambas, en adelante, denominadas nuestras "Plataformas").</p>
+
+                <p>En nuestras Plataformas obtenemos la información personal mediante dos vías:</p>
+                <ul>
+                    <li>Cuando rellenas alguno de los formularios digitales o en alguna de nuestras tiendas, es decir cuando tú nos das los datos de manera directa.</li>
+                    <li>Cuando navegas por nuestra web mediante el uso de cookies y tecnologías semejantes, es decir, información que nos proporcionas de manera indirecta cuando navegas (más información en nuestra Política de Cookies).</li>
+                </ul>
+
+                <p>Nunca recabaremos categorías especiales de datos. Según la finalidad, la información que nos facilitas se corresponde con datos identificativos (nombre, apellido), fecha de nacimiento, datos de conexión, geolocalización y navegación, datos sobre gustos y preferencias, datos sobre transferencias de bienes, información comercial (como las newsletter), datos académicos y profesionales.</p>
+
+                <p>Ante cualquier duda respecto de nuestra Política de Privacidad, puedes enviar un correo a la dirección <strong>data@primor.eu</strong>.</p>
+
+                <h3>¿QUIÉNES SON LOS RESPONSABLES?</h3>
+                <p>PRIMOR es una marca comercial bajo la que operan diferentes entidades en régimen de colaboración, de esta manera, los responsables del tratamiento de los datos de los usuarios nuestras Plataformas son:</p>
+                <ul>
+                    <li>ROSA CREMA, S.L., con CIF B92683259 y Domicilio social: Cl Albinoni Pg. Trévenez 6-8 29590 - (Campanillas) – Málaga.</li>
+                    <li>PRIMOR CAN, S.L., con CIF B93551802 y Domicilio social: Cl Albinoni Pg. Trévenez 6-8 29590 - (Campanillas) – Málaga.</li>
+                    <li>PERSIAN MELON, S.L. con CIF B92171313 y Domicilio social: Cl Albinoni Pg. Trévenez 6-8 29590 - (Campanillas) – Málaga.</li>
+                    <li>SENTIMENTAL JOURNEY UNIPESSOAL LDA, con NIPC 515966029, domicilio en Rua Ernesto Carvalho, Edifício Turim Loja 8, 4760-143 Vila Nova de Famalicão - Braga.</li>
+                </ul>
+
+                <p>Estas entidades determinan conjuntamente los objetivos y medios del tratamiento, por lo que son corresponsables del tratamiento de los datos personales de los usuarios.</p>
+
+                <h3>¿PARA QUÉ, POR QUÉ Y DURANTE CUÁNTO TIEMPO TRATAMOS TUS DATOS PERSONALES?</h3>
+                
+                <h4>En atención al cliente</h4>
+                <p><strong>Finalidad:</strong> Responder a las cuestiones que el interesado haga llegar al responsable. Con la finalidad de dar respuesta a tu solicitud, trataremos los datos indispensables, que generalmente se corresponden con los datos de contacto (email) y los datos relacionados con tu pedido, o con la incidencia que nos quieras comunicar.</p>
+                <p><strong>Base de legitimación:</strong> Si tu consulta está relacionada con un pedido, devoluciones, modificaciones de los datos de pedido, solicitud de artículos en stock, descuentos, o cuestiones relacionadas con el pago de las compras realizadas, el tratamiento de tus datos se basará en la ejecución del contrato de compraventa o para la aplicación de medidas precontractuales a petición tuya.</p>
+                <p><strong>Plazo de conservación:</strong> Tus datos serán tratados el tiempo estrictamente necesario para atender a la solicitud o cuestiones que nos hagas llegar.</p>
+
+                <h4>Durante el proceso de compra y postventa</h4>
+                <p><strong>Finalidad:</strong> Para la gestión, cumplimiento y ejecución del contrato de compra. En concreto, utilizaremos tus datos personales para la formalización del contrato de compra; para la gestión pago de transacciones; para contactar contigo en caso de cualquier incidencia relacionada con tu pedido; para la gestión de la facturación y entrega de tickets y facturas de compra; para la gestión de las devoluciones de productos adquiridos; para informarte sobre la disponibilidad de los productos solicitados; y para la gestión de cupones o tarjetas regalos que canjees en la web o nuestras tiendas.</p>
+                <p><strong>Base de legitimación:</strong> La ejecución de la relación contractual entre las partes, es decir, para la ejecución de las compras que realizas en nuestras Plataformas; base de legitimación basada en lo previsto en el artículo 6.1.b) del RGPD.</p>
+                <p><strong>Plazo de conservación:</strong> Trataremos los datos durante el tiempo necesario para gestionar las compras realizadas, lo que incluye cualquier incidencia relacionada con tu pedido (devoluciones, quejas, reclamaciones, consultas de pedidos…).</p>
+
+                <h4>En la prevención del fraude</h4>
+                <p><strong>Finalidad:</strong> Prevención del fraude. Asimismo, podremos utilizar los datos personales para al objeto de realizar las comprobaciones necesarias para la prevención del fraude.</p>
+                <p><strong>Base de legitimación:</strong> Para la prevención del fraude, consideramos que tenemos interés legítimo para el tratamiento de datos. Este interés se basa en la necesidad de mantener la seguridad en nuestras Plataformas y en la navegación que realices.</p>
+
+                <h3>¿QUÉ DERECHOS TIENES?</h3>
+                <p>Los derechos otorgados por la legislación dependen de la base de legitimación y la finalidad del tratamiento y, en concreto, se corresponden con los siguientes:</p>
+                <ul>
+                    <li><strong>Derecho de acceso:</strong> Confirmación de si se están tratando o no datos personales, las categorías de datos, los destinatarios o categoría de destinatarios, el plazo de conservación o criterios para su determinación.</li>
+                    <li><strong>Derecho de rectificación:</strong> Posibilidad de rectificar los datos personales que sean inexactos y completar aquellos incompletos.</li>
+                    <li><strong>Derecho de supresión:</strong> Cuando no sean necesarios para la finalidad para la que se recogió, o no dispongamos de legitimación para ello.</li>
+                    <li><strong>Derecho a la portabilidad:</strong> Obtener los datos personales en un formato estructurado, de uso común, de lectura mecánica e interoperable.</li>
+                    <li><strong>Derecho a retirar el consentimiento:</strong> Cuando el tratamiento se base en el consentimiento prestado.</li>
+                    <li><strong>Derecho de oposición:</strong> Cuando el tratamiento se base en el interés legítimo.</li>
+                </ul>
+
+                <p>Para el ejercicio de estos derechos, podrás enviar un correo a la dirección <strong>data@primor.eu</strong>.</p>
+
+                <p>Asimismo, te informamos que podrás presentar una reclamación ante la Agencia Española de Protección de Datos.</p>
+
+                <h3>SOBRE LA EXACTITUD Y VERACIDAD DE LOS DATOS</h3>
+                <p>Eres el único responsable de la veracidad y corrección de los datos que nos facilites, quedando exonerado el responsable de cualquier responsabilidad al respecto. Los usuarios garantizan y responden, en cualquier caso, de la exactitud, vigencia y autenticidad de los datos personales facilitados, y se comprometen a mantenerlos debidamente actualizados.</p>
+
+                <h3>INFORMACIÓN ADICIONAL</h3>
+                <p>Para más información sobre nuestra política de privacidad y ejercicio de derechos, contacta con nosotros en <strong>data@primor.eu</strong>.</p>
+            </div>
+        </div>
+    </div>
 
     <script>
         function prosseguir() {
@@ -416,6 +644,20 @@
             } else {
                 faqContent.classList.add('active');
                 faqButton.textContent = 'Ocultar Preguntas Frecuentes';
+            }
+        }
+
+        function openPrivacyModal() {
+            const modal = document.getElementById('privacyModal');
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closePrivacyModal(event) {
+            if (!event || event.target.id === 'privacyModal' || event.target.classList.contains('modal-close')) {
+                const modal = document.getElementById('privacyModal');
+                modal.classList.remove('active');
+                document.body.style.overflow = 'auto';
             }
         }
     </script>
