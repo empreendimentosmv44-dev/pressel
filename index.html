@@ -174,6 +174,8 @@
             text-align: center;
             box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
             backdrop-filter: blur(10px);
+            max-height: 80vh;
+            overflow-y: auto;
         }
 
         .footer-text {
@@ -201,7 +203,7 @@
         }
 
         .faq-section {
-            margin: 30px auto 80px;
+            margin: 15px auto 10px;
             text-align: left;
             width: 100%;
             max-width: 800px;
@@ -310,90 +312,90 @@
         </button>
     </div>
 
-    <div class="faq-section">
-        <button class="faq-toggle" onclick="toggleFAQ()">Ver Preguntas Frecuentes</button>
-        <div class="faq-content" id="faqContent">
-            
-            <div class="faq-category">
-                <h3 class="faq-category-title">Envíos</h3>
-                <div class="faq-item">
-                    <p class="faq-question">¿Cuánto cuesta el envío?</p>
-                    <p class="faq-answer">¡Ofrecemos envío gratis en muchos casos! Tienes información completa acerca de envíos y su coste en la página de Envíos.</p>
-                </div>
-                <div class="faq-item">
-                    <p class="faq-question">¿Cuánto tarda un pedido en llegar a mi casa?</p>
-                    <p class="faq-answer">Puedes ver información sobre plazos aquí. Ten en cuenta que en periodos de promociones y algunos momentos del año (Navidad, Black Friday...) los plazos pueden extenderse.</p>
-                </div>
-                <div class="faq-item">
-                    <p class="faq-question">¿Envían a mi zona?</p>
-                    <p class="faq-answer">Enviamos a España península, Baleares, Canarias, Portugal península, Francia y Andorra. A Ceuta y Melilla hacemos envío a tienda, para que puedas recoger tu pedido en nuestras tiendas de allí.</p>
-                </div>
-                <div class="faq-item">
-                    <p class="faq-question">¿Se puede recoger un pedido en tienda?</p>
-                    <p class="faq-answer">¡Sí! Puedes hacer tu pedido en la web o app y recogerlo en una de nuestras tiendas. En el carrito de compras, antes de finalizar el pedido, elige "Recogida en tienda" y selecciona la tienda que te quede mejor.</p>
-                </div>
-            </div>
-
-            <div class="faq-category">
-                <h3 class="faq-category-title">Pago</h3>
-                <div class="faq-item">
-                    <p class="faq-question">¿Qué monto puedo comprar en mi pedido?</p>
-                    <p class="faq-answer">El pedido mínimo es de 10€ (impuestos y transporte no incluidos). Siempre que haya stock disponible, puedes pedir hasta 6 unidades del mismo producto por pedido.</p>
-                </div>
-                <div class="faq-item">
-                    <p class="faq-question">¿Qué métodos de pago aceptáis?</p>
-                    <p class="faq-answer">Aceptamos tarjetas de crédito, contrarrembolso (pagas en efectivo al recibir tu pedido), Klarna y Bizum. El pago contrarrembolso no está disponible para recogida en tienda ni para tarjetas regalo virtuales.</p>
-                </div>
-                <div class="faq-item">
-                    <p class="faq-question">¿Es seguro comprar en la web de Primor?</p>
-                    <p class="faq-answer">Trabajamos con los más altos estándares de seguridad informática. No guardamos absolutamente ningún dato de tarjetas de crédito ni cuentas bancarias. Contamos con certificados de seguridad de última generación.</p>
-                </div>
-            </div>
-
-            <div class="faq-category">
-                <h3 class="faq-category-title">Devoluciones</h3>
-                <div class="faq-item">
-                    <p class="faq-question">¿Puedo devolver un producto?</p>
-                    <p class="faq-answer">Por supuesto. Tienes 14 días desde recibido tu pedido para solicitar devolución. Coordinaremos recogida con la empresa de transportes para que pasen a por el producto por tu casa.</p>
-                </div>
-                <div class="faq-item">
-                    <p class="faq-question">¿Qué hago si he recibido un producto diferente al solicitado?</p>
-                    <p class="faq-answer">Contáctanos ni bien detectes el incidente (dentro de las 72 horas laborables de recibido tu pedido) y lo subsanaremos lo antes posible.</p>
-                </div>
-                <div class="faq-item">
-                    <p class="faq-question">¿Qué hago si he recibido un producto dañado?</p>
-                    <p class="faq-answer">Contáctanos al momento de detectar el problema (dentro de las 72 horas laborables de recibido tu pedido) y lo subsanaremos lo antes posible.</p>
-                </div>
-            </div>
-
-            <div class="faq-category">
-                <h3 class="faq-category-title">Tarjeta Regalo</h3>
-                <div class="faq-item">
-                    <p class="faq-question">¿Qué tipos de tarjetas regalo tiene Primor?</p>
-                    <p class="faq-answer">En Primor tenemos dos tipos de tarjeta regalo: Tarjeta Regalo Física y Tarjeta Regalo Digital. La física es como una tarjeta de crédito y la digital se envía por correo electrónico.</p>
-                </div>
-                <div class="faq-item">
-                    <p class="faq-question">¿Las tarjetas regalo se pueden utilizar en la web y en las tiendas?</p>
-                    <p class="faq-answer">Sí, tanto las tarjetas regalos físicas como las digitales pueden ser utilizadas en tiendas físicas y también en la web de Primor.</p>
-                </div>
-            </div>
-
-            <div class="faq-category">
-                <h3 class="faq-category-title">Financiación</h3>
-                <div class="faq-item">
-                    <p class="faq-question">¿Qué es y cómo funciona Klarna Paga en 3 plazos sin intereses?</p>
-                    <p class="faq-answer">Klarna es un proveedor de servicios de pago sueco. Divide el coste de tu compra en 3 pagos iguales. El primer pago se realiza al confirmar el pedido, y los siguientes a los 30 y 60 días. Sin intereses 0% TAE.</p>
-                </div>
-                <div class="faq-item">
-                    <p class="faq-question">¿Está protegida mi información de pago?</p>
-                    <p class="faq-answer">Sí, Klarna procesa tu información de pago de forma segura.</p>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
     <footer>
+        <div class="faq-section">
+            <button class="faq-toggle" onclick="toggleFAQ()">Ver Preguntas Frecuentes</button>
+            <div class="faq-content" id="faqContent">
+                
+                <div class="faq-category">
+                    <h3 class="faq-category-title">Envíos</h3>
+                    <div class="faq-item">
+                        <p class="faq-question">¿Cuánto cuesta el envío?</p>
+                        <p class="faq-answer">¡Ofrecemos envío gratis en muchos casos! Tienes información completa acerca de envíos y su coste en la página de Envíos.</p>
+                    </div>
+                    <div class="faq-item">
+                        <p class="faq-question">¿Cuánto tarda un pedido en llegar a mi casa?</p>
+                        <p class="faq-answer">Puedes ver información sobre plazos aquí. Ten en cuenta que en periodos de promociones y algunos momentos del año (Navidad, Black Friday...) los plazos pueden extenderse.</p>
+                    </div>
+                    <div class="faq-item">
+                        <p class="faq-question">¿Envían a mi zona?</p>
+                        <p class="faq-answer">Enviamos a España península, Baleares, Canarias, Portugal península, Francia y Andorra. A Ceuta y Melilla hacemos envío a tienda, para que puedas recoger tu pedido en nuestras tiendas de allí.</p>
+                    </div>
+                    <div class="faq-item">
+                        <p class="faq-question">¿Se puede recoger un pedido en tienda?</p>
+                        <p class="faq-answer">¡Sí! Puedes hacer tu pedido en la web o app y recogerlo en una de nuestras tiendas. En el carrito de compras, antes de finalizar el pedido, elige "Recogida en tienda" y selecciona la tienda que te quede mejor.</p>
+                    </div>
+                </div>
+
+                <div class="faq-category">
+                    <h3 class="faq-category-title">Pago</h3>
+                    <div class="faq-item">
+                        <p class="faq-question">¿Qué monto puedo comprar en mi pedido?</p>
+                        <p class="faq-answer">El pedido mínimo es de 10€ (impuestos y transporte no incluidos). Siempre que haya stock disponible, puedes pedir hasta 6 unidades del mismo producto por pedido.</p>
+                    </div>
+                    <div class="faq-item">
+                        <p class="faq-question">¿Qué métodos de pago aceptáis?</p>
+                        <p class="faq-answer">Aceptamos tarjetas de crédito, contrarrembolso (pagas en efectivo al recibir tu pedido), Klarna y Bizum. El pago contrarrembolso no está disponible para recogida en tienda ni para tarjetas regalo virtuales.</p>
+                    </div>
+                    <div class="faq-item">
+                        <p class="faq-question">¿Es seguro comprar en la web de Primor?</p>
+                        <p class="faq-answer">Trabajamos con los más altos estándares de seguridad informática. No guardamos absolutamente ningún dato de tarjetas de crédito ni cuentas bancarias. Contamos con certificados de seguridad de última generación.</p>
+                    </div>
+                </div>
+
+                <div class="faq-category">
+                    <h3 class="faq-category-title">Devoluciones</h3>
+                    <div class="faq-item">
+                        <p class="faq-question">¿Puedo devolver un producto?</p>
+                        <p class="faq-answer">Por supuesto. Tienes 14 días desde recibido tu pedido para solicitar devolución. Coordinaremos recogida con la empresa de transportes para que pasen a por el producto por tu casa.</p>
+                    </div>
+                    <div class="faq-item">
+                        <p class="faq-question">¿Qué hago si he recibido un producto diferente al solicitado?</p>
+                        <p class="faq-answer">Contáctanos ni bien detectes el incidente (dentro de las 72 horas laborables de recibido tu pedido) y lo subsanaremos lo antes posible.</p>
+                    </div>
+                    <div class="faq-item">
+                        <p class="faq-question">¿Qué hago si he recibido un producto dañado?</p>
+                        <p class="faq-answer">Contáctanos al momento de detectar el problema (dentro de las 72 horas laborables de recibido tu pedido) y lo subsanaremos lo antes posible.</p>
+                    </div>
+                </div>
+
+                <div class="faq-category">
+                    <h3 class="faq-category-title">Tarjeta Regalo</h3>
+                    <div class="faq-item">
+                        <p class="faq-question">¿Qué tipos de tarjetas regalo tiene Primor?</p>
+                        <p class="faq-answer">En Primor tenemos dos tipos de tarjeta regalo: Tarjeta Regalo Física y Tarjeta Regalo Digital. La física es como una tarjeta de crédito y la digital se envía por correo electrónico.</p>
+                    </div>
+                    <div class="faq-item">
+                        <p class="faq-question">¿Las tarjetas regalo se pueden utilizar en la web y en las tiendas?</p>
+                        <p class="faq-answer">Sí, tanto las tarjetas regalos físicas como las digitales pueden ser utilizadas en tiendas físicas y también en la web de Primor.</p>
+                    </div>
+                </div>
+
+                <div class="faq-category">
+                    <h3 class="faq-category-title">Financiación</h3>
+                    <div class="faq-item">
+                        <p class="faq-question">¿Qué es y cómo funciona Klarna Paga en 3 plazos sin intereses?</p>
+                        <p class="faq-answer">Klarna es un proveedor de servicios de pago sueco. Divide el coste de tu compra en 3 pagos iguales. El primer pago se realiza al confirmar el pedido, y los siguientes a los 30 y 60 días. Sin intereses 0% TAE.</p>
+                    </div>
+                    <div class="faq-item">
+                        <p class="faq-question">¿Está protegida mi información de pago?</p>
+                        <p class="faq-answer">Sí, Klarna procesa tu información de pago de forma segura.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
         <p class="footer-text">
             ROSA CREMA, S.L., con CIF B92683259 y Domicilio social: Cl Albinoni Pg. Trévenez 6-8 29590 - (Campanillas) – Málaga.
         </p>
